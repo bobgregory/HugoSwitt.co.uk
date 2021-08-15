@@ -4,7 +4,7 @@ body {
     background-color: #008080;
 }
 
-div{border: red 1px solid}
+div{border: transparent 1px solid}
 
 .boids{
     position: fixed;
@@ -69,16 +69,26 @@ div{border: red 1px solid}
 }
 
 .nav a:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     color: #008080;
     background-color: #ffffff;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
-.credits{
+.credits-box{
+    opacity: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     color: #ffffff;
-    top: 0px;
-    right: 0px;
+    animation: fadeInAnimation 2s ease 2s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+.credits{
+    float: right;
+    text-align: right;
+    font-size: 10px;
 }
 
 
